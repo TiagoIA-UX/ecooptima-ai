@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecooptima-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecooptima-backend
+  template:
+    metadata:
+      labels:
+        app: ecooptima-backend
+    spec:
+      containers:
+      - name: backend
+        image: ecooptima-backend:latest
+        ports:
+        - containerPort: 8000

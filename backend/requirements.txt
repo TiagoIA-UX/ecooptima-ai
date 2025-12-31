@@ -1,0 +1,7 @@
+# Dependências principais para backend e IA
+fastapi
+tensorflow
+scikit-learn
+pandas
+numpy
+uvicorn
