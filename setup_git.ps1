@@ -9,9 +9,9 @@ git add .
 
 git commit -m "Initial commit EcoOptima AI"
 
-# ATENÇÃO: Altere a linha abaixo para a URL do seu repositório no GitHub
-# Exemplo: https://github.com/seuusuario/ecooptima-ai.git
-git remote add origin URL_DO_REPOSITORIO
+
+# URL do repositório GitHub
+git remote add origin https://github.com/TiagoIA-UX/ecooptima-ai.git
 
 git branch -M main
 git push -u origin main
