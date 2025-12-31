@@ -1,0 +1,29 @@
+# Instruções de Execução - EcoOptima AI
+
+1. Banco de Dados
+- Certifique-se que o PostgreSQL está instalado e rodando.
+- Crie o banco de dados ecooptima:
+  CREATE DATABASE ecooptima;
+
+2. Configuração do Backend
+- Ative o ambiente virtual:
+  .\venv\Scripts\Activate.ps1
+- Instale as dependências:
+  pip install -r ecooptima-ai/backend/requirements.txt
+- Inicialize as tabelas:
+  python ecooptima-ai/backend/data/init_db.py
+- Execute o backend:
+  uvicorn ecooptima-ai.backend.api.main:app --reload
+
+3. Configuração do Frontend
+- Instale as dependências:
+  cd ecooptima-ai/frontend
+  npm install
+- Execute o frontend:
+  npm start
+
+4. Visualização
+- Acesse http://localhost:3000 no navegador.
+- Cadastre-se, faça login e explore todas as funcionalidades: dashboard, registro de consumo, marketplace de créditos de carbono, conversão de moedas e validação de créditos.
+
+Se precisar de ajuda com algum passo, integração de APIs ou ajustes, só avisar!
